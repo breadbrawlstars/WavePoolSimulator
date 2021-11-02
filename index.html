@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wave-pool simulator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="./styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/controls.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class="container">
+      <h3>🌊 Wave-pool Simulator</h3>
+      <ul class="spinners fade-in"></ul>
+      <ul class="controls m-t-40">
+        <li>
+          <section>
+            <input type="range" id="speed" class="slider m-t-20" min="0.1" max="2.1" value="1.2" step="0.01">
+            <label for="speed">Speed</label>
+          </section>
+          <section>
+            <span class="conic-spinner control speed normal"></span>
+          </section>
+        </li>
+        <li>
+          <section>
+            <input type="range" id="colour" class="slider m-t-20" min="0" max="360" value="180" step="1">
+            <label for="colour">Colour</label>
+          </section>
+          <section>
+            <span class="conic-spinner control colour normal"></span>
+          </section>
+        </li>
+        <li>
+          <section>
+            <input type="range" id="border-radius" class="slider m-t-20" min="0" max="50" value="50" step="1">
+            <label for="border-radius">Corners</label>
+          </section>
+          <section>
+            <span class="conic-spinner control border-radius normal"></span>
+          </section>
+        </li>
+        <li class="hide-in-safari">
+          <section>
+            <input type="range" id="shape" class="slider m-t-20" min="0" max="90" value="50" step="1">
+            <label for="shape">Shape</label>
+          </section>
+          <section>
+            <span class="conic-spinner control shape normal"></span>
+          </section>
+        </li>
+        <li class="control-buttons">
+          <section>
+            <button id="play-state" class="btn m-t-0">
+              <span class="btn-text m-r-3">Pause</span>
+              <i class="fas fa-pause"></i>
+            </button>
+          </section>
+          <section>
+            <button id="randomise" class="btn m-t-0 m-l-10">
+              <span class="btn-text m-r-3">Random</span>
+            </button>
+          </section>
+          <section>
+            <a href="https://replit.com/@breadbrawlstars" target="_target" class="btn m-t-0 m-l-10">My projects<i class="fas fa-external-link-alt m-l-5"></i>
+            </a>
+          </section>
+        </li>
+      </ul>
+    </main>
+    <script src="index.js" type="module" defer></script>
+  </body>
+</html>
